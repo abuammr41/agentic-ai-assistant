@@ -1,0 +1,26 @@
+DEMO RUN — SAMPLE DATA, SEE README.txt IN THIS FOLDER FOR DISCLOSURE
+======================================================================
+
+Goal given to the agent:
+"Calculate compound interest on $5000 at 7% annual rate over 10 years,
+then briefly explain what 'compound interest' means."
+
+--- Agent's reasoning (step by step) ---
+
+[step 1] calculator({'expression': '5000 * (1.07 ** 10)'})
+         -> 9835.756786447831
+
+[step 2] web_search({'query': 'what is compound interest'})
+         -> - Compound interest - Wikipedia
+            https://en.wikipedia.org/wiki/Compound_interest
+            Compound interest is interest accumulated from a principal sum
+            and previously accumulated interest...
+
+=== Final answer from the agent ===
+$5,000 invested at 7% annual compound interest for 10 years grows to
+approximately $9,835.76 — almost double the original amount.
+
+Compound interest means you earn interest not only on your original
+amount (the principal), but also on the interest that has already been
+added in previous periods. That's why growth accelerates over time
+compared to simple interest.
